@@ -24,5 +24,15 @@ namespace H24
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Rectangle rect = new Rectangle();
+            rect.Width = 40;
+            rect.Height = 25.5;
+            rect.Fill = new SolidColorBrush(Colors.Red);
+            rect.Margin = new Thickness(250, 250, 0, 0);
+            canvas.Children.Add(rect);
+        }
     }
 }
