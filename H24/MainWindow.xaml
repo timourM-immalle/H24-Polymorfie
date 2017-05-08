@@ -9,6 +9,6 @@
     <Grid>
         <Canvas x:Name="canvas" Background="LightGray"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="40" Margin="34,47,0,0" VerticalAlignment="Top" Width="77"/>
-        <Button x:Name="button1" Content="Button1" Height="36" Canvas.Left="142" Canvas.Top="47" Width="90"/>
+        <Button x:Name="button1" Content="Button1" Height="36" Canvas.Left="142" Canvas.Top="47" Width="90" Margin="244,182,183,101"/>
     </Grid>
 </Window>
