@@ -26,7 +26,7 @@ namespace H24
         {
             rect = new Rectangle();
             rect.Width = grootte;
-            rect.Height = grootte;
+            rect.Height = rect.Width;
             rect.Stroke = brush;
             rect.Margin = new Thickness(x, y, 0, 0);
         }

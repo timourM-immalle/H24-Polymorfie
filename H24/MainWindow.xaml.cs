@@ -25,14 +25,20 @@ namespace H24
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnTekenen_Click(object sender, RoutedEventArgs e)
         {
-            Rectangle rect = new Rectangle();
-            rect.Width = 40;
-            rect.Height = 25.5;
-            rect.Fill = new SolidColorBrush(Colors.Red);
-            rect.Margin = new Thickness(250, 250, 0, 0);
-            canvas.Children.Add(rect);
+
+            Vorm cirkel = new Cirkel(40, 40);
+            Vorm vierkant = new Vierkant(180, 180);
+            List<Vorm> groepke = new List<Vorm>();
+
+            groepke.Add(cirkel);
+            groepke.Add(vierkant);
+
+            foreach (Vorm vormke in groepke)
+            {
+                vormke.TonenOp(canvas);
+            }
         }
     }
 }
