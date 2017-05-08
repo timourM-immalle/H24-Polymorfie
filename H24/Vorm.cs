@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
+using System.Windows.Controls;
 
 namespace H24
 {
@@ -13,5 +14,7 @@ namespace H24
         protected int y;
         protected int grootte = 75;
         protected SolidColorBrush brush = new SolidColorBrush(Colors.Black);
+
+        public abstract void TonenOp(Canvas tekencanvas);
     }
 }
