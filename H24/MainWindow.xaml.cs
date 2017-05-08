@@ -27,10 +27,11 @@ namespace H24
 
         private void btnTekenen_Click(object sender, RoutedEventArgs e)
         {
-
             Vorm cirkel = new Cirkel(40, 40);
             Vorm vierkant = new Vierkant(180, 180);
             List<Vorm> groepke = new List<Vorm>();
+
+            canvas.Children.Clear();
 
             groepke.Add(cirkel);
             groepke.Add(vierkant);
@@ -38,6 +39,30 @@ namespace H24
             foreach (Vorm vormke in groepke)
             {
                 vormke.TonenOp(canvas);
+            }
+        }
+
+        private void btnAndersTekenen_Click(object sender, RoutedEventArgs e)
+        {
+            Vorm cirkel = new Cirkel(50, 50);
+            Vorm vierkant = new Vierkant(200, 200);
+            List<Vorm> groepke = new List<Vorm>();
+
+            canvas.Children.Clear();
+
+            foreach (Vorm vormke in groepke)
+            {
+                if (vormke is Cirkel)
+                {
+                    //Cirkel cirkelke = (Cirkel)vormke;
+                    cirkel.TonenOp(canvas);
+                }
+
+                if (vormke is Vierkant)
+                {
+                    //Vierkant vierkantje = (Vierkant)vormke;
+                    vierkant.TonenOp(canvas);
+                }
             }
         }
     }
