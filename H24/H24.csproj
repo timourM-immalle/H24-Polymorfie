@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Cirkel.cs" />
     <Compile Include="Vierkant.cs" />
     <Compile Include="Vorm.cs" />
     <Page Include="MainWindow.xaml">
