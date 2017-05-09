@@ -40,6 +40,9 @@ namespace H24
             {
                 vormke.TonenOp(canvas);
             }
+
+            Vorm rndVierkant = new RndVierkant();
+            rndVierkant.TonenOp(canvas);
         }
 
         private void btnAndersTekenen_Click(object sender, RoutedEventArgs e)

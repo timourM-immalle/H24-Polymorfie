@@ -22,7 +22,7 @@ namespace H24
             MaakVierkant();
         }
 
-        private void MaakVierkant()
+        protected virtual void MaakVierkant()
         {
             rect = new Rectangle();
             rect.Width = grootte;

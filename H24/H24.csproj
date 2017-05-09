@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Cirkel.cs" />
+    <Compile Include="RndVierkant.cs" />
     <Compile Include="Vierkant.cs" />
     <Compile Include="Vorm.cs" />
     <Page Include="MainWindow.xaml">

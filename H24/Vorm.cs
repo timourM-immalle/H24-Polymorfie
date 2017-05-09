@@ -14,6 +14,12 @@ namespace H24
         protected int y;
         protected int grootte = 75;
         protected SolidColorBrush brush = new SolidColorBrush(Colors.Black);
+        //protected Random rndVormMargin = new Random();
+
+        //protected Vorm()
+        //{
+
+        //}
 
         public abstract void TonenOp(Canvas tekencanvas);
     }
