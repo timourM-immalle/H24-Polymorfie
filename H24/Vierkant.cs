@@ -12,7 +12,7 @@ namespace H24
 {
     public class Vierkant : Vorm
     {
-        private Rectangle rect;
+        protected Rectangle rect;
 
         public Vierkant(int beginX, int beginY)
         {

@@ -13,19 +13,15 @@ namespace H24
     class RndVierkant : Vierkant
     {
         private Random rndPositie = new Random();
-        private Rectangle rect = new Rectangle();
 
-        public RndVierkant() : base(0, 0)
+        public RndVierkant() : base(0, 0) //evt. randoms meegeven
         {
 
         }
 
         protected override void MaakVierkant()
         {
-            //base.MaakVierkant();
-            rect.Width = grootte;
-            rect.Height = rect.Width;
-            rect.Stroke = brush;
+            base.MaakVierkant();
             rect.Fill = new SolidColorBrush(Colors.Red);
         }
 
@@ -37,8 +33,7 @@ namespace H24
 
             rect.Margin = new Thickness(x, y, 0, 0);
 
-            //base.TonenOp(tekenCanvas);
-            tekenCanvas.Children.Add(rect);
+            base.TonenOp(tekenCanvas); //gaat wel, omdat rect protected is (zie klasse Vierkant)
         }
     }
 }
