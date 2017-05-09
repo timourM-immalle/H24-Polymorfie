@@ -27,19 +27,19 @@ namespace H24
 
         private void btnTekenen_Click(object sender, RoutedEventArgs e)
         {
-            Vorm cirkel = new Cirkel(40, 40);
-            Vorm vierkant = new Vierkant(180, 180);
-            List<Vorm> groepke = new List<Vorm>();
+            //Vorm cirkel = new Cirkel(40, 40);
+            //Vorm vierkant = new Vierkant(180, 180);
+            //List<Vorm> groepke = new List<Vorm>();
 
-            canvas.Children.Clear();
+            //canvas.Children.Clear();
 
-            groepke.Add(cirkel);
-            groepke.Add(vierkant);
+            //groepke.Add(cirkel);
+            //groepke.Add(vierkant);
 
-            foreach (Vorm vormke in groepke)
-            {
-                vormke.TonenOp(canvas);
-            }
+            //foreach (Vorm vormke in groepke)
+            //{
+            //    vormke.TonenOp(canvas);
+            //}
 
             Vorm rndVierkant = new RndVierkant();
             rndVierkant.TonenOp(canvas);

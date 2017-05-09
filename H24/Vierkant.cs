@@ -31,9 +31,9 @@ namespace H24
             rect.Margin = new Thickness(x, y, 0, 0);
         }
 
-        public override void TonenOp(Canvas tekencanvas)
+        public override void TonenOp(Canvas tekenCanvas)
         {
-            tekencanvas.Children.Add(rect);
+            tekenCanvas.Children.Add(rect);
         }
     }
 }

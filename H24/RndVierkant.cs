@@ -22,7 +22,10 @@ namespace H24
 
         protected override void MaakVierkant()
         {
-            base.MaakVierkant();
+            //base.MaakVierkant();
+            rect.Width = grootte;
+            rect.Height = rect.Width;
+            rect.Stroke = brush;
             rect.Fill = new SolidColorBrush(Colors.Red);
         }
 
@@ -34,7 +37,8 @@ namespace H24
 
             rect.Margin = new Thickness(x, y, 0, 0);
 
-            base.TonenOp(tekenCanvas);
+            //base.TonenOp(tekenCanvas);
+            tekenCanvas.Children.Add(rect);
         }
     }
 }
